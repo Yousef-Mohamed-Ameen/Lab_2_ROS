@@ -1,0 +1,11 @@
+hardware_bridge:
+  ros__parameters:
+    port: /dev/ttyUSB0          # Linux: /dev/ttyUSB0 or /dev/ttyACM0
+    baud: 115200
+    dry_run: false
+    rate_hz: 50.0
+    joint_names: [joint1, joint2, joint3, joint4]
+    servo_center_deg: [90.0, 90.0, 90.0, 90.0]   # servo angle at joint = 0 rad
+    servo_direction: [1.0, 1.0, 1.0, 1.0]        # -1.0 to mirror a servo
+    servo_min_deg: [0.0, 0.0, 0.0, 0.0]
+    servo_max_deg: [180.0, 180.0, 180.0, 180.0]
